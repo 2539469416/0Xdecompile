@@ -1,8 +1,6 @@
 package com.chenxingX.service;
 
 import com.chenxingX.util.Decompiler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.StopWatch;
 
 import java.io.BufferedWriter;
@@ -14,7 +12,7 @@ import java.io.FileWriter;
  */
 
 public class MakeJavaFile implements Runnable {
-    private static final Logger logger = LoggerFactory.getLogger(MakeJavaFile.class);
+
     private String classFile;
     private String outputPath;
 
@@ -35,7 +33,7 @@ public class MakeJavaFile implements Runnable {
             bw.write(Decompiler.decompile(classPath, ""));
             bw.close();
             stopWatch.stop();
-            logger.info(outputPath + " decompile done" + "elapsed time " + stopWatch.getLastTaskTimeMillis() + "ms");
+            System.out.println(outputPath + " decompile done" + "elapsed time " + stopWatch.getLastTaskTimeMillis() + "ms");
         } catch (Exception e) {
             e.printStackTrace();
         }

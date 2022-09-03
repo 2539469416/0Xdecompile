@@ -30,7 +30,6 @@ public class Main {
         }
         CreateJavaFile createJavaFile = new CreateJavaFile();
         createJavaFile.scanDir(new File(output), input, corePoolSize);
-
     }
 }
 

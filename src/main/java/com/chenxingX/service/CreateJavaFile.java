@@ -3,8 +3,6 @@ package com.chenxingX.service;
 import com.chenxingX.config.ExecutorFactory;
 import com.chenxingX.util.StringUtils;
 import org.apache.commons.io.IOUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.StopWatch;
 
 import java.io.*;
@@ -18,7 +16,6 @@ import java.util.concurrent.Future;
 
 public class CreateJavaFile {
 
-    private static final Logger logger = LoggerFactory.getLogger(CreateJavaFile.class);
 
     private static ExecutorService executor = null;
 
@@ -45,7 +42,7 @@ public class CreateJavaFile {
             e.printStackTrace();
         }
         sw.stop();
-        logger.info("Time taken for tests :" + sw.getLastTaskTimeMillis() + "ms");
+        System.out.println("Time taken for tests :" + sw.getLastTaskTimeMillis() + "ms");
     }
 
     public void scanDir(File file, String filePath, String path) {

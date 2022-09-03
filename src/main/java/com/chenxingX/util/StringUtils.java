@@ -1,26 +1,17 @@
 package com.chenxingX.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.util.ObjectUtils;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.StringReader;
 import java.lang.reflect.Modifier;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.List;
-import java.util.Properties;
-import java.util.Set;
-import java.util.StringTokenizer;
-import java.util.TreeSet;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
 
 public abstract class StringUtils {
-    private static final Logger logger = LoggerFactory.getLogger(StringUtils.class);
+
     private static final String AB = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 
     /**
@@ -49,7 +40,6 @@ public abstract class StringUtils {
         try {
             return obj.toString();
         } catch (Throwable t) {
-            logger.error("objectToString error, obj class: {}", obj.getClass(), t);
             return "ERROR DATA!!! Method toString() throw exception. obj class: " + obj.getClass()
                     + ", exception class: " + t.getClass()
                     + ", exception message: " + t.getMessage();
