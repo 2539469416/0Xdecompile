@@ -17,6 +17,7 @@
 		<java.version>11</java.version>
 		<directory>D:\code\oneEDR\decompileX\target\install</directory>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
 	<dependencies>
 
@@ -38,7 +39,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-			<version>5.3.22</version>
+			<version>5.3.23</version>
 		</dependency>
 	</dependencies>
 
