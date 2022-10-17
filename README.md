@@ -1,6 +1,6 @@
 ## 0Xdecompile
 
-0Xdecompile是基于cfr的多线程反编译工具，主要用于多线程反编译class文件，生成源码.java文件，进行修改代码以及替换。
+0Xdecompile是基于cfr的多线程反编译工具，主要用于反编译class文件，生成源码.java文件，进行修改代码以及替换。
 0Xdecompile is a multi-thread decompiler tool based on CFR, mainly used for multi-thread decompiler class file, source code generation. Java file, code modification and replacement.
 
 支持jar包，war包，文件夹形式进行编译
