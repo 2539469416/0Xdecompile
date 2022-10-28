@@ -14,7 +14,7 @@
 	<name>0Xdecompile</name>
 	<description>ThreadDecompile</description>
 	<properties>
-		<java.version>11</java.version>
+		<java.version>9</java.version>
 		<directory>D:\code\oneEDR\decompileX\target\install</directory>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
